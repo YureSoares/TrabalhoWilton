@@ -10,10 +10,11 @@ function fazerCadastro(){
         alert("Digite o codigo do produto para continuar!")
     }else if(qtde==''){
         alert("Selecione a quantidade de produtos para continuar!")
-    }else if(localBase != null){
-        produtos = localBase;
-    }
-    produtos.push({nome: nome,cod: codigo, qtd: qtde}) 
-    localStorage.setItem("Produtos", JSON.stringify(produtos))
-    window.location.href='visualizaProd.html'; 
+    }else{ 
+        if(localBase != null){
+            produtos = localBase;
+        }
+        produtos.push({nome: nome,cod: codigo, qtd: qtde}) 
+        localStorage.setItem("Produtos", JSON.stringify(produtos))
+    }   
 }
