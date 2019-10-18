@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estoque - Cadastro de novos produtos</title>
+    <link rel="stylesheet" href="css/resson.css">
+    <style>
+        .linha-menu {
+            text-align: right;
+        }
+
+        .div-center {
+            text-align: center;
+        }
+
+        .titulo {
+            color:red;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .div-cadastro table {
+            width: 400px;
+        }
+    </style>
+    <script>
+    
+    </script>
+</head>
+<body>
+    <header>
+        <div class="linha linha-menu">
+            <div class="col-dg-12">
+                <img src="img/carrinhoCompras.png" alt="">
+                Itens no estoque: <span id="itens_estoque">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="linha">
+                <div class="col-dg-12 div-center">
+                    <p class="titulo">Cadastro de novos produtos</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="linha">
+                <div class="col-dg-12 div-center div-cadastro">
+                    <form action="" method="">
+                        <table>
+                            <tr>
+                                <td>Nome do produto:</td>
+                                <td><input type="text" name="codigo_produto" id="nome_produto"></td>
+                            </tr>
+                            <tr>
+                                <td>Código do produto:</td>
+                                <td><input type="text" name="codigo_produto" id="nome_produto"></td>
+                            </tr>
+                            <tr>
+                                <td>Quantidade do produto:</td>
+                                <td><select name="qtde_produto" id="qtde_produto">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" id="btn_cadastrar" value="Cadastrar">
+                                    <input type="button" id="btn_estoque" value="Ver estoque">
+                                    <input type="reset" id="btn_limpar" value="Limpar">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    </header>
+</body>
+</html>
