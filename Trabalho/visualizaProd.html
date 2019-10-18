@@ -5,20 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Itens Estoque</title>
-    <script>
-        let prod = [{nome:'sabão em pó',cod:'s10',qtd:'10'},{nome:'farinha',cod:'f54',qtd:'7'},{nome:'arroz(5kg)',cod:'ar4',qtd:'8'},{nome:'açucar(2kg)',cod:'cr38',qtd:'4'}];
-        localStorage.setItem('Produtos',JSON.stringify(prod));
-        let prodJson =JSON.parse(localStorage.getItem('Produtos'))
-        document.write('<h1>Estoque:</h1>');
-        for(let i = 0; i < prodJson.length;i++){
-            document.write('<ul>');
-            document.write('<li>Nome do produto: '+prodJson[i].nome+'</li>');
-            document.write('<li>Código do produto: '+prodJson[i].cod+'</li>');
-            document.write('<li>Quantidade no estoque: '+prodJson[i].qtd+'</li>');
-            document.write('</ul><hr/>');
-        }
-       
-    </script>
+    <link rel="stylesheet" href="css/visualizaProd.css">
+    
+    <script type="text/javascript" src="js/visualizaProd.js"></script>
 </head>
 <body>
     
