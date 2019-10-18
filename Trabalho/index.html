@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Estoque - Cadastro de novos produtos</title>
     <link rel="stylesheet" href="css/resson.css">
-    <script src="js/script.js"></script>
     <style>
         .linha-menu {
             text-align: right;
@@ -77,7 +76,7 @@
                             </tr>
                             <tr>
                                 <td class="align-right">Código do produto:</td>
-                                <td class="align-left"><input type="text" name="codigo_produto" id="nome_produto"></td>
+                                <td class="align-left"><input type="text" name="codigo_produto" id="codigo_produto"></td>
                             </tr>
                             <tr>
                                 <td class="align-right">Quantidade do produto:</td>
@@ -96,8 +95,8 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <input class="botao" type="button" id="btn_cadastrar" value="Cadastrar">
-                                    <input class="botao" type="button" id="btn_estoque" value="Ver estoque">
+                                    <input class="botao" type="button" id="btn_cadastrar" onclick="fazerCadastro()" value="Cadastrar">
+                                    <input class="botao" type="button" id="btn_estoque" onclick="window.location.href='visualizaProd.html'" value="Ver estoque">
                                     <input class="botao" type="reset" id="btn_limpar" value="Limpar">
                                 </td>
                             </tr>
@@ -111,4 +110,5 @@
         
     </header>
 </body>
+<script src="js/script.js"></script>
 </html>

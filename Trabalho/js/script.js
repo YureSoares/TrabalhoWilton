@@ -18,5 +18,17 @@ function fazerCadastro(){
         document.getElementById('nome_produto').value = '';
         document.getElementById('codigo_produto').value = '';
         document.getElementById('qtde_produto').value = '1';
+        contagemCarrinho();
     }   
 }
+
+function contagemCarrinho() {
+    let localBase = JSON.parse(localStorage.getItem('Produtos'));
+    let quantidade = 0;
+    if(localBase != null){
+        quantidade = localBase.length;
+    }
+    document.getElementById('itens_estoque').innerHTML = quantidade;
+}
+
+contagemCarrinho()
