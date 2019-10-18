@@ -8,13 +8,15 @@ function fazerCadastro(){
         alert("Digite o nome do produto para continuar!")
     }else if(codigo==''){
         alert("Digite o codigo do produto para continuar!")
-    }else if(qtde==''){
-        alert("Selecione a quantidade de produtos para continuar!")
     }else{ 
         if(localBase != null){
             produtos = localBase;
         }
         produtos.push({nome: nome,cod: codigo, qtd: qtde}) 
         localStorage.setItem("Produtos", JSON.stringify(produtos))
+        alert("Produto cadastrado com sucesso!")
+        document.getElementById('nome_produto').value = '';
+        document.getElementById('codigo_produto').value = '';
+        document.getElementById('qtde_produto').value = '1';
     }   
 }
