@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Estoque - Cadastro de novos produtos</title>
     <link rel="stylesheet" href="css/resson.css">
+    <script src="js/script.js"></script>
     <style>
         .linha-menu {
             text-align: right;
@@ -16,13 +17,37 @@
         }
 
         .titulo {
-            color:red;
+            color:rgb(213,97,100);
             font-size: 22px;
             font-weight: 800;
         }
 
         .div-cadastro table {
             width: 400px;
+            background-color: rgb(213,97,100);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .div-cadastro table td {
+            padding: 10px;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .botao {
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
         }
     </style>
     <script>
@@ -41,28 +66,22 @@
     <main>
         <section>
             <div class="linha">
-                <div class="col-dg-12 div-center">
-                    <p class="titulo">Cadastro de novos produtos</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="linha">
                 <div class="col-dg-4"></div>
                 <div class="col-dg-4 div-center div-cadastro">
                     <form action="" method="">
                         <table>
+                            <label for="" class="titulo">Cadastro de novos produtos</label>
                             <tr>
-                                <td>Nome do produto:</td>
-                                <td><input type="text" name="codigo_produto" id="nome_produto"></td>
+                                <td class="align-right">Nome do produto:</td>
+                                <td class="align-left"><input type="text" name="nome_produto" id="nome_produto"></td>
                             </tr>
                             <tr>
-                                <td>Código do produto:</td>
-                                <td><input type="text" name="codigo_produto" id="nome_produto"></td>
+                                <td class="align-right">Código do produto:</td>
+                                <td class="align-left"><input type="text" name="codigo_produto" id="nome_produto"></td>
                             </tr>
                             <tr>
-                                <td>Quantidade do produto:</td>
-                                <td><select name="qtde_produto" id="qtde_produto">
+                                <td class="align-right">Quantidade do produto:</td>
+                                <td class="align-left"><select name="qtde_produto" id="qtde_produto">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -76,10 +95,10 @@
                                 </select></td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="button" id="btn_cadastrar" value="Cadastrar">
-                                    <input type="button" id="btn_estoque" value="Ver estoque">
-                                    <input type="reset" id="btn_limpar" value="Limpar">
+                                <td colspan="2">
+                                    <input class="botao" type="button" id="btn_cadastrar" value="Cadastrar">
+                                    <input class="botao" type="button" id="btn_estoque" value="Ver estoque">
+                                    <input class="botao" type="reset" id="btn_limpar" value="Limpar">
                                 </td>
                             </tr>
                         </table>
